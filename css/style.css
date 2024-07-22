@@ -670,7 +670,7 @@
 }
 .footer-top {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-bottom: 1px solid rgb(93, 108, 123, 0.15);
   padding-bottom: 75px;
 }
@@ -689,19 +689,27 @@
   margin: 0;
 }
 .footer-list-1 {
-  margin-right: 125px;
+  margin-right: 128px;
 }
 .footer-list-2 {
   columns: 2 auto;
-  margin-right: 110px;
+  margin-right: 96px;
   gap: 44px;
   width: 270px;
 }
 .footer-list-3 {
   columns: 2 auto;
-  margin-right: 75px;
-  gap: 40px;
+  margin-right: 60px;
+  gap: 23px;
   width: 340px;
+}
+.item-black {
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.23px;
+  color: #5D6C7B;
+  margin-bottom: 2px;
 }
 .footer-wrapper-link {
   font-family: Jost;
@@ -733,6 +741,7 @@
   line-height: 23.12px;
   color: #282739;
   margin-bottom: 7px;
+  word-spacing: -2px;
 }
 .footer-item-balck {
   color: #282739;
@@ -744,8 +753,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 36px;
-  padding-bottom: 34px;
+  padding-top: 23px;
+  padding-bottom: 31px;
   border-bottom: 1px solid rgb(93, 108, 123, 0.15);
 }
 .footer-middle-left {
@@ -753,10 +762,13 @@
   align-items: center;
 }
 .footer-logo {
-  margin-right: 60px;
+  margin-right: 63px;
 }
 .footer-logo-link {
   text-decoration: none;
+}
+.google-link {
+  margin-right: 5px;
 }
 
 .footer-middle-right {
@@ -769,7 +781,10 @@
   gap: 13px;
   background-color: #fff;
   border-radius: 5px;
+  padding: 6px 20px 7px 12px;
+  
 }
+
 .social-info {
   display: flex;
   flex-direction: column;
@@ -790,11 +805,12 @@
   color: #5D6C7B;
 }
 
+
 .footer-bot {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
+  padding-top: 16px;
   padding-bottom: 18px;
 }
 .requisites {
@@ -823,11 +839,13 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+  gap: 3px;
+  margin-right: 6px;
 }
 .online-chat {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
   margin-left: 37px;
 }
 .chat-text {
@@ -964,6 +982,7 @@
   margin: 0;
 }
 .modal-image {
-  height: 497px;
+  /* height: 497px; */
+  width: 84%;
   margin-left: 69px;
 }
