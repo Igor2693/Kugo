@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kugo - главная страница</title>
+  <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
@@ -54,22 +56,26 @@
         <a href="/" class="logo">
           <img src="/img/logo.svg" alt="logo" class="logo-image">
         </a>
-        <button class="header-button">
-          <div class="button-line">
-            <div class="line line-1"></div>
-            <div class="line line-2"></div>
-            <div class="line line-3"></div>
-          </div>
-          <!-- /.button-line -->
-           <span class="button-text">Каталог</span>
-        </button>
-        <div class="input-group search">
-          <input type="search" placeholder="Искать самокат KUGO" class="input-search">
-          <button class="search-button">
-            <img src="/img/search.svg" alt="icon: search" class="search-icon">
+        <div class="block-header-input">
+          <button class="header-button">
+            <div class="button-line">
+              <div class="line line-1"></div>
+              <div class="line line-2"></div>
+              <div class="line line-3"></div>
+            </div>
+            <!-- /.button-line -->
+             <span class="button-text">Каталог</span>
           </button>
+          <div class="input-group search">
+            <input type="search" placeholder="Искать самокат KUGO" class="input-search">
+            <button class="search-button">
+              <img src="/img/search.svg" alt="icon: search" class="search-icon">
+            </button>
+          </div>
+          <!-- /.input-group -->
         </div>
-        <!-- /.input-group -->
+        <!-- /.block-header-input -->
+        
          <div class="icons-group">
           <a href="#" class="header-icon-link">
             <img src="/img/balance.svg" alt="icon: balance" class="header-icon-image">
@@ -89,119 +95,136 @@
     <!-- /.container -->
    </section>
    <!-- /.header -->
-    <section class="main main-image">
-      <div class="container">
-        <div class="main-wrapper">
-          <div class="location">
-            <img src="/img/location.svg" alt="icon: location" class="icon-location">
-            <a href="#" class="location-link">Восточно-Кругликовская улица, 86</a>
-            <span class="location-info">Вт - Сб 10:00 - 20:00</span>
+    <section class="main">
+      <div class="container-wrapper main-image">
+      <!-- /.container-wrapper -->
+        <div class="container">
+          <div class="main-wrapper">
+            <div class="location">
+              <img src="/img/location.svg" alt="icon: location" class="icon-location">
+              <a href="#" class="location-link">Восточно-Кругликовская улица, 86</a>
+              <span class="location-info">Вт - Сб 10:00 - 20:00</span>
+            </div>
+            <!-- /.location -->
+            <h1 class="main-title">Запишитесь на бесплатный тест-драйв электросамокатов</h1>
+            <p class="main-subtitle">в Москве без ограничения по времени</p>
+            <div class="main-info">
+              <div class="main-info-item">
+                <div class="image-wrapper">
+                  <img src="/img/scooter.svg" alt="icon: scooter" class="main-info-image">
+                </div>
+                <!-- /.image-wrapper -->
+                <span>Поймете, какая модель вам подходит</span>
+              </div>
+              <!-- /.main-info-item -->
+              <div class="main-info-item">
+                <div class="image-wrapper">
+                  <img src="/img/energy.svg" alt="icon: energy" class="main-info-image">
+                </div>
+                <!-- /.image-wrapper -->
+                Проверите лучшие самокаты в деле
+              </div>
+              <!-- /.main-info-item -->
+            </div>
+            <!-- /.main-info -->
+            <button class="main-button" data-toggle="modal">Записаться</button>
           </div>
-          <!-- /.location -->
-           <h1 class="main-title">Запишитесь на бесплатный тест-драйв электросамокатов</h1>
-           <p class="main-subtitle">в Москве без ограничения по времени</p>
-           <div class="main-info">
-            <div class="main-info-item">
-              <div class="image-wrapper">
-                <img src="/img/scooter.svg" alt="icon: scooter" class="main-info-image">
-              </div>
-              <!-- /.image-wrapper -->
-              <span>Поймете, какая модель вам подходит</span>
-            </div>
-            <!-- /.main-info-item -->
-            <div class="main-info-item">
-              <div class="image-wrapper">
-                <img src="/img/energy.svg" alt="icon: energy" class="main-info-image">
-              </div>
-              <!-- /.image-wrapper -->
-              Проверите лучшие самокаты в деле
-            </div>
-            <!-- /.main-info-item -->
-           </div>
-           <!-- /.main-info -->
-           <button class="main-button" data-toggle="modal">Записаться</button>
+          <!-- /.main-wrapper -->
         </div>
-        <!-- /.main-wrapper -->
       </div>
     </section>
     <!-- /.main -->
 
     <section class="scooter-top">
-      <img src="/img/scooter-top.png" alt="photo scooter" class="scooter-photo">
-      <div class="container">
-        <div class="scooter-top-info">
-          <h2 class="scooter-top-title">
-            Определите максимально подходящую вам модель<br>
-          не теоретически, а на практике
-          </h2>
-         <div class="test-drive">
-          <span class="test-drive-subtitle">Тест-драйв поможет:</span>
-          <ul class="test-drive-list">
-            <li class="test-drive-item">
-              <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-              <span class="test-drive-text"><b>Понять </b> подходит ли вам конкретная модель;</span>
-            </li>
-            <li class="test-drive-item">
-              <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-             <span class="test-drive-text"><b>Испытать </b> самокат в «реальной жизни»;</span>
-            </li>
-            <li class="test-drive-item">
-              <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-              <span class="test-drive-text"><b>Оценить </b> удобство хранения и эксплуатации;</span>
-            </li>
-            <li class="test-drive-item">
-              <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-              <span class="test-drive-text"><b>Узнать </b> реальные характеристики и возможности модели.</span>
-            </li>
-          </ul>
+      <div class="container-wrapper">
+      <!-- /.container-wrapper -->
+      <picture>
+        <source type="image/webp" srcset="/img/scooter-top.webp">
+        <source type="image/jpeg" srcset="/img/scooter-top.png">
+        <img src="/img/scooter-top.png" alt="photo scooter" class="scooter-photo">
+      </picture>
+        <div class="container">
+          <div class="scooter-top-info">
+            <h2 class="scooter-top-title">
+              Определите максимально подходящую вам модель<br>
+            не теоретически, а на практике
+            </h2>
+          <div class="test-drive">
+            <span class="test-drive-subtitle">Тест-драйв поможет:</span>
+            <ul class="test-drive-list">
+              <li class="test-drive-item">
+                <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                <span class="test-drive-text"><b>Понять </b> подходит ли вам конкретная модель;</span>
+              </li>
+              <li class="test-drive-item">
+                <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+              <span class="test-drive-text"><b>Испытать </b> самокат в «реальной жизни»;</span>
+              </li>
+              <li class="test-drive-item">
+                <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                <span class="test-drive-text"><b>Оценить </b> удобство хранения и эксплуатации;</span>
+              </li>
+              <li class="test-drive-item">
+                <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                <span class="test-drive-text"><b>Узнать </b> реальные характеристики и возможности модели.</span>
+              </li>
+            </ul>
+          </div>
+          <!-- /.test-drive -->
+          </div>
+          <!-- /.scooter-top-info -->
         </div>
-        <!-- /.test-drive -->
-        </div>
-        <!-- /.scooter-top-info -->
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
     </section>
     <!-- /.scooter-top -->
      <section class="scooter-bot">
-      <img src="/img/scooter-bot.png" alt="photo scooter" class="photo-scooter-bot">
-      <div class="container">
-        <div class="scooter-bot-wrapper">
-          <div class="scooter-bot-info">
-            <h2 class="scooter-top-title">
-              Научим правильной <br> и безопасной езде в городе вас или вашего ребенка
-            </h2>
-            <div class="test-drive">
-              <span class="test-drive-subtitle">На обучении специалист расскажет:</span>
-              <ul class="training-list">
-                <li class="test-drive-item">
-                  <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-                  <span class="test-drive-text">Как подготовить самокат к поездке;</span>
-                </li>
-                <li class="test-drive-item">
-                  <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-                  <span class="test-drive-text">Как «завести» самокат;</span>
-                </li>
-                <li class="test-drive-item">
-                  <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-                  <span class="test-drive-text">Как вести себя во время поездки и обезопасить себя и окружающих;</span>
-                </li>
-                <li class="test-drive-item">
-                  <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-                  <span class="test-drive-text">Как складывать и раскладывать электросамокат;</span>
-                </li>
-                <li class="test-drive-item">
-                  <img src="/img/Check.svg" alt="icon: check" class="icon-check">
-                  <span class="test-drive-text">Как ухаживать за своим девайсом.</span>
-                </li>
-              </ul>
+      <div class="container-wrapper">
+      <!-- /.container-wrapper -->
+      <picture>
+        <source type="image/webp" srcset="/img/scooter-bot.webp">
+        <source type="image/jpeg" srcset="/img/scooter-bot.png">
+        <img src="/img/scooter-bot.png" alt="photo scooter" class="photo-scooter-bot">
+      </picture>       
+        <div class="container">
+          <div class="scooter-bot-wrapper">
+            <div class="scooter-bot-info">
+              <h2 class="scooter-top-title">
+                Научим правильной <br> и безопасной езде в городе вас или вашего ребенка
+              </h2>
+              <div class="test-drive">
+                <span class="test-drive-subtitle">На обучении специалист расскажет:</span>
+                <ul class="training-list">
+                  <li class="test-drive-item">
+                    <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                    <span class="test-drive-text">Как подготовить самокат к поездке;</span>
+                  </li>
+                  <li class="test-drive-item">
+                    <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                    <span class="test-drive-text">Как «завести» самокат;</span>
+                  </li>
+                  <li class="test-drive-item">
+                    <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                    <span class="test-drive-text">Как вести себя во время поездки и обезопасить себя и окружающих;</span>
+                  </li>
+                  <li class="test-drive-item">
+                    <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                    <span class="test-drive-text">Как складывать и раскладывать электросамокат;</span>
+                  </li>
+                  <li class="test-drive-item">
+                    <img src="/img/Check.svg" alt="icon: check" class="icon-check">
+                    <span class="test-drive-text">Как ухаживать за своим девайсом.</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.test-drive -->
             </div>
-            <!-- /.test-drive -->
+            <!-- /.scooter-bot-info -->
           </div>
-          <!-- /.scooter-bot-info -->
+          <!-- /.scooter-bot-wrapper -->
         </div>
-        <!-- /.scooter-bot-wrapper -->
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
      </section>
      <!-- /.scooter-bot -->
 
@@ -436,45 +459,53 @@
      <!-- /.product -->
 
      <section class="connection">
-      <div class="bg-grey">
-        <img src="/img/client.png" alt="photo client" class="client-photo">
-        <div class="container connection-wrapper">
-          <form action="" class="connection-form">
-            <h2 class="connection-title">Нет нужной модели, которую хотите протестировать?</h2>
-            <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
-            <div class="input-area">
-              <div class="input-form">
-                <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder="">
-                <label class="input-label" for="user-phone">+7 (___) __ - __ - __</label>
+      <div class="container-wrapper">
+      <!-- /.container-wrapper -->
+        <div class="bg-grey">
+          <picture>
+            <source type="image/webp" srcset="/img/client.webp">
+            <source type="image/jpeg" srcset="/img/client.png">
+            <img src="/img/client.png" alt="photo client" class="client-photo">
+          </picture>       
+          
+          <div class="container connection-wrapper">
+            <form action="" class="connection-form">
+              <h2 class="connection-title">Нет нужной модели, которую хотите протестировать?</h2>
+              <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
+              <div class="input-area">
+                <div class="input-form">
+                  <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder="">
+                  <label class="input-label" for="user-phone">+7 (___) __ - __ - __</label>
+                </div>
+                <!-- /.input-form-tel -->
+                <div class="input-form">
+                  <button type="submit" class="button connection-button">Оставить заявку на тест-драйв</button>
+                </div>
+                <!-- /.button-block -->
+                
               </div>
-              <!-- /.input-form-tel -->
-               <div class="input-form">
-                <button type="submit" class="button connection-button">Оставить заявку на тест-драйв</button>
-               </div>
-               <!-- /.button-block -->
-              
-            </div>
-            <!-- /.input-area -->
-             <div class="politics">
-              <input type="checkbox">
-              <p class="connection-text">
-                Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
-                <a href="#" class="politics-link">политикой конфиденциальности</a>
-              </p>
-             </div>
-             <!-- /.politics -->
-          </form>
+              <!-- /.input-area -->
+              <div class="politics">
+                <input type="checkbox">
+                <p class="connection-text">
+                  Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
+                  <a href="#" class="politics-link">политикой конфиденциальности</a>
+                </p>
+              </div>
+              <!-- /.politics -->
+            </form>
+          </div>
+          <!-- /.container -->
         </div>
-        <!-- /.container -->
+        <!-- /.bg-grey -->
       </div>
-      <!-- /.bg-grey -->
      </section>
      <!-- /.connection -->
 
      <section class="subscribe">
       <div class="bg-blue">
         <div class="container subscribe-wripper">
-          <h3 class="subscribe-title">Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты</h3>
+          <h3 class="subscribe-title">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты</h3>
           <div class="subscribe-input-block">
             <input type="email" class="input-email" placeholder="Введите Ваш email">
             <button class="button-subscribe">Подписаться</button>
@@ -635,7 +666,12 @@
           <!-- /.politics -->
         </div>
         <!-- /.modal-left -->
-         <img src="/img/modal.png" alt="photo woman" class="modal-image">
+        <picture>
+          <source type="image/webp" srcset="/img/modal.webp">
+          <source type="image/jpeg" srcset="/img/modal.png">
+          <img src="/img/modal.png" alt="photo woman" class="modal-image">
+        </picture>
+      
       </div>
       <!-- /.modal-dialog -->
      </div>
