@@ -14,8 +14,27 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <div class="mobile-menu is-open">
+    <ul>
+      <li>Сервис</li>
+      <li>Сотрудничество</li>
+      <li>Заказать звонок</li>
+    </ul>
+  </div>
+  <!-- /.mobile-menu -->
   <section class="header-top">
     <div class="container">
+      <div class="header-nav">
+        <a href="#" class="mobile-menu-toggle">
+          <div class="mobile-menu-line"></div>
+          <div class="mobile-menu-line"></div>
+          <div class="mobile-menu-line"></div>
+        </a>
+        <a href="/.">
+          <img src="/img/logo.svg" alt="logo page">
+        </a>
+      </div>
+      <!-- /.header-nav -->
       <div class="header-top-wrapper">
           <ul class="header-list">
             <li class="header-item">
@@ -97,6 +116,7 @@
    <!-- /.header -->
     <section class="main">
       <div class="container-wrapper main-image">
+        
       <!-- /.container-wrapper -->
         <div class="container">
           <div class="main-wrapper">
@@ -114,7 +134,7 @@
                   <img src="/img/scooter.svg" alt="icon: scooter" class="main-info-image">
                 </div>
                 <!-- /.image-wrapper -->
-                <span>Поймете, какая модель вам подходит</span>
+                <span class="image-wrapper-text">Поймете, какая модель вам подходит</span>
               </div>
               <!-- /.main-info-item -->
               <div class="main-info-item">
@@ -122,7 +142,7 @@
                   <img src="/img/energy.svg" alt="icon: energy" class="main-info-image">
                 </div>
                 <!-- /.image-wrapper -->
-                Проверите лучшие самокаты в деле
+                <span class="image-wrapper-text">Проверите лучшие самокаты в деле</span>
               </div>
               <!-- /.main-info-item -->
             </div>
@@ -136,14 +156,19 @@
     <!-- /.main -->
 
     <section class="scooter-top">
-      <div class="container-wrapper">
-      <!-- /.container-wrapper -->
+      
+    
       <picture>
         <source type="image/webp" srcset="/img/scooter-top.webp">
         <source type="image/jpeg" srcset="/img/scooter-top.png">
         <img src="/img/scooter-top.png" alt="photo scooter" class="scooter-photo">
       </picture>
         <div class="container">
+          <picture>
+            <source type="image/webp" srcset="/img/scooter-top.webp">
+            <source type="image/jpeg" srcset="/img/scooter-top.png">
+            <img src="/img/scooter-top.png" alt="photo scooter" class="scooter-photo-mobile">
+          </picture>
           <div class="scooter-top-info">
             <h2 class="scooter-top-title">
               Определите максимально подходящую вам модель<br>
@@ -175,18 +200,22 @@
           <!-- /.scooter-top-info -->
         </div>
         <!-- /.container -->
-      </div>
     </section>
     <!-- /.scooter-top -->
      <section class="scooter-bot">
-      <div class="container-wrapper">
-      <!-- /.container-wrapper -->
+      
+      
       <picture>
         <source type="image/webp" srcset="/img/scooter-bot.webp">
         <source type="image/jpeg" srcset="/img/scooter-bot.png">
         <img src="/img/scooter-bot.png" alt="photo scooter" class="photo-scooter-bot">
       </picture>       
         <div class="container">
+          <picture>
+            <source type="image/webp" srcset="/img/scooter-bot.webp">
+            <source type="image/jpeg" srcset="/img/scooter-bot.png">
+            <img src="/img/scooter-bot.png" alt="photo scooter" class="scooter-photo-mobile">
+          </picture>
           <div class="scooter-bot-wrapper">
             <div class="scooter-bot-info">
               <h2 class="scooter-top-title">
@@ -224,7 +253,7 @@
           <!-- /.scooter-bot-wrapper -->
         </div>
         <!-- /.container -->
-      </div>
+     
      </section>
      <!-- /.scooter-bot -->
 
@@ -459,8 +488,6 @@
      <!-- /.product -->
 
      <section class="connection">
-      <div class="container-wrapper">
-      <!-- /.container-wrapper -->
         <div class="bg-grey">
           <picture>
             <source type="image/webp" srcset="/img/client.webp">
@@ -498,19 +525,24 @@
           <!-- /.container -->
         </div>
         <!-- /.bg-grey -->
-      </div>
      </section>
      <!-- /.connection -->
 
      <section class="subscribe">
       <div class="bg-blue">
-        <div class="container subscribe-wripper">
-          <h3 class="subscribe-title">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты</h3>
-          <div class="subscribe-input-block">
+        <div class="container">
+          <div class="wrapper">
+            <h3 class="subscribe-title">
+              Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты
+              <h3>
             <input type="email" class="input-email" placeholder="Введите Ваш email">
             <button class="button-subscribe">Подписаться</button>
           </div>
-          <!-- /.subscribe-input-block -->
+          <!-- /.wrapper -->
+          
+           
+            <!-- /.subscribe-input-block -->
+
         </div>
         <!-- /.container -->
       </div>
@@ -642,7 +674,7 @@
      </section>
      <!-- /.footer-->
 
-     <div class="modal is-open">
+     <div class="modal">
       <div class="modal-dialog">
         <a href="#" class="modal-close">
           <img src="/img/close.svg" alt="icon: close" class="close-icon">
