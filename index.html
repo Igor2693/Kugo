@@ -15,11 +15,31 @@
 </head>
 <body>
   <div class="mobile-menu">
-    <ul>
-      <li>Сервис</li>
-      <li>Сотрудничество</li>
-      <li>Заказать звонок</li>
-    </ul>
+    <div class="mobile-menu-wrapper">
+      <div class="input-group-mobile search">
+        <input type="search" placeholder="Искать самокат KUGO" class="input-search-mobile">
+        <button class="search-button">
+          <img src="/img/search.svg" alt="icon: search" class="search-icon">
+        </button>
+      </div>
+      <!-- /.input-group -->
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">Сервис</a></li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">Сотрудничество</a></li>
+        <li class="mobile-menu-item">
+          <a href="#" class="mobile-menu-link">Заказать звонок</a>
+        </li>
+        <li class="mobile-item-tel">
+          
+          <a href="tel:+78005055461" class="mobile-phone-link">+7 (800) 505-54-61</a>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.mobile-menu-wrapper -->
+    
   </div>
   <!-- /.mobile-menu -->
   <section class="header-top">
@@ -30,9 +50,10 @@
           <div class="mobile-menu-line"></div>
           <div class="mobile-menu-line"></div>
         </a>
-        <a href="/.">
-          <img src="/img/logo.svg" alt="logo page">
+        <a href="/." class="navbar-logo">
+          <img src="/img/logo.svg" alt="logo page" class="navbar-logo-image">
         </a>
+        
       </div>
       <!-- /.header-nav -->
       <div class="header-top-wrapper">
@@ -501,7 +522,7 @@
               <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
               <div class="input-area">
                 <div class="input-form">
-                  <input id="user-phone" type="tel" class="input phone-mask" name="userphone" placeholder="">
+                  <input id="user-phone" type="tel" class="input input-politics phone-mask" name="userphone" placeholder="">
                   <label class="input-label" for="user-phone">+7 (___) __ - __ - __</label>
                 </div>
                 <!-- /.input-form-tel -->
@@ -554,43 +575,81 @@
       <div class="container">
         <div class="footer-top">
           <div class="footer-wrapper">
-            <h2 class="footer-title">Каталог товаров</h2>
+            <h2 class="footer-title">
+              <a href="#" class="footer-title-link">Каталог товаров</a></h2>
             <ul class="footer-list footer-list-1">
-              <li class="footer-item">Электросамокаты</li>
-              <li class="footer-item">Электроскутеры</li>
-              <li class="footer-item">Электровелосипеды</li>
-              <li class="footer-item">Электровелосипеды</li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Электросамокаты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Электроскутеры</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Электровелосипеды</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Электровелосипеды</a>
+              </li>
             </ul>
           </div>
           <!-- /.footer-wrapper -->
            <div class="footer-wrapper">
-            <h2 class="footer-title">Покупателям</h2>
+            <h2 class="footer-title">
+              <a href="#" class="footer-title-link">Покупателям</a>
+            </h2>
             <ul class="footer-list footer-list-2">
-              <li class="footer-item">Сервисный центр</li>
-              <li class="footer-item">Доставка и оплата</li>
-              <li class="footer-item">Рассрочка</li>
-              <li class="footer-item">Тест-драйв</li>
-              <li class="footer-item">Блог</li>
-              <li class="footer-item">Сотрудничество</li>
-              <li class="footer-item">Контакты</li>
-              <li class="footer-item">Акции</li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Сервисный центр</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Доставка и оплата</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Рассрочка</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Тест-драйв</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Блог</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Сотрудничество</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Контакты</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-item-link">Акции</a>
+              </li>
             </ul>
            </div>
            <!-- /.footer-wrapper -->
             <div class="footer-wrapper">
-              <h2 class="footer-title">Контакты</h2>
+              <h2 class="footer-title">
+                <a href="#" class="footer-title-link">Контакты</a></h2>
               <ul class="footer-list footer-list-3">
-                <li class="item-black">Call-центр</li>
-                <li class="footer-item-tel">+7 (800) 505-54-61</li>
+                <li class="item-black">
+                  <a href="#" class="footer-item-link">Call-центр</a>
+                </li>
+                <li class="footer-item-tel">
+                  <a href="tel:+78005055461" class="footer-item-link">+7 (800) 505-54-61</a>
+                </li>
                 <li class="footer-item footer-item-time">Пн-Вс 10:00 - 20:00</li>
-                <li class="item-black">Сервисный центр</li>
-                <li class="footer-item-tel">+7 (499) 350-76-92</li>
+                <li class="item-black">
+                  <a href="#" class="footer-item-link">Сервисный центр</a>
+                </li>
+                <li class="footer-item-tel">
+                  <a href="tel:+78005055461" class="footer-item-link">+7 (499) 350-76-92</a>
+                </li>
                 <li class="footer-item footer-item-time">Пн-Вс 10:00 - 20:00</li>
               </ul>
             </div>
             <!-- /.footer-wrapper -->
              <div class="footer-wrapper footer-wrapper-tel">
-              <h2 class="footer-title-link"><a href="#" class="footer-wrapper-link">Заказать звонок</a></h2>
+              <h2 class="footer-title-link">
+                <a href="#" class="footer-wrapper-link">Заказать звонок</a>
+              </h2>
               
              </div>
              <!-- /.footer-wrapper -->
@@ -601,15 +660,15 @@
           <div class="footer-middle-left">
             <a href="/." class="footer-logo-link"><img src="/img/logo.svg" alt="icon: logo" class="footer-logo"></a>
             <div class="save">
-              <a href="#"><img src="/img/google.png" alt="link" class="google-link"></a>
-              <a href="#"><img src="/img/app.png" alt="link" class="app-link"></a>
+              <a href="#" class="save-link"><img src="/img/google.png" alt="link" class="google-link"></a>
+              <a href="#" class="save-link"><img src="/img/app.png" alt="link" class="app-link"></a>
             </div>
             <!-- /.save -->
           </div>
           <!-- /.footer-middle-left -->
            <div class="footer-middle-right">
             <div class="social-card">
-              <a href="#">
+              <a href="#" class="social-card-link">
                 <img src="/img/vk.svg" alt="icon: vk">
               </a>
               <div class="social-info">
@@ -620,7 +679,7 @@
             </div>
             <!-- /.social-card -->
             <div class="social-card social-card-yt">
-              <a href="#">
+              <a href="#" class="social-card-link">
                 <img src="/img/youtube.svg" alt="icon: yt">
               </a>
               <div class="social-info">
@@ -631,7 +690,7 @@
             </div>
             <!-- /.social-card -->
             <div class="social-card">
-              <a href="#">
+              <a href="#" class="social-card-link">
                 <img src="/img/telegram-color.svg" alt="icon: tg">
               </a>
               <div class="social-info">
