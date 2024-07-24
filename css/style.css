@@ -1473,6 +1473,9 @@ html {
     font-weight: 600;
     text-decoration: none;
   }
+  .input-area {
+    width: 45rem;
+  }
     
 }
 @media (max-width: 606px) {
