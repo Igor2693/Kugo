@@ -522,8 +522,8 @@
               <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
               <div class="input-area">
                 <div class="input-form">
-                  <input id="user-phone" name="userphone" type="tel" class="input input-politics phone-mask" name="userphone" placeholder="" required>
-                  <label class="input-label" for="user-phone">+7 (___) __ - __ - __</label>
+                  <input id="user-phone" name="userphone" type="tel" class="input input-politics phone-mask" name="userphone" placeholder="+7 (___) __ - __ - __"   required>
+                  <!-- <label class="input-label" for="user-phone">+7 (___) __ - __ - __</label> -->
                 </div>
                 <!-- /.input-form-tel -->
                 <div class="input-form">
@@ -534,7 +534,7 @@
               </div>
               <!-- /.input-area -->
               <div class="politics">
-                <input type="checkbox">
+                <input type="checkbox" checked required>
                 <p class="connection-text">
                   Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                   <a href="#" class="politics-link">политикой конфиденциальности</a>
@@ -733,17 +733,18 @@
           <img src="/img/close.svg" alt="icon: close" class="close-icon">
         </a>
         <div class="modal-left">
-          <form action="handler.php" method="POST">
+          <form action="handler.php" method="POST" class="form-modal">
             <h2 class="modal-title">Запишитесь <br> натест-драйв электросамоката</h2>
           <p class="chose-model">и подберите модель для себя</p>
           <p class="modal-subtitle">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
           <p class="question">Как с вами удобнее связаться?</p>
           <div class="input-form-modal">
-            <input id="user-phone-modal" type="tel" class="input-modal phone-mask" name="userphone" placeholder="">
+            <input id="user-phone-modal" type="tel" class="input-modal phone-mask" name="userphone" placeholder=""
+            required>
             <button class="modal-button">Оформить предзаказ</button>
           </div>
           <div class="politics-modal">
-            <input type="checkbox">
+            <input type="checkbox" name="checkbox" required>
             <p class="connection-text">
               Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
               <a href="#" class="politics-link">политикой конфиденциальности</a>
@@ -766,5 +767,6 @@
      <!-- /.modal -->
 
      <script src="/js/main.js"></script>
+     <script src="/js/just-validate.production.min.js"></script>
 </body>
 </html>

@@ -22,16 +22,6 @@ mMenuToggle.addEventListener("click", (event) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
   /* если вводят семерку, добавляем ей скобку */
@@ -145,6 +135,50 @@ modalClose.addEventListener('click', (event) => {
   event.preventDefault();
   modal.classList.remove("is-open");
 });
+
+
+
+
+
+
+const forms = document.querySelectorAll("form"); //Собираем все формы
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+ validation
+ .addField("[name=checkbox]", [
+  {
+    rule: 'required',
+  },
+ ])
+ .addField("[name=userphone]", [
+ {
+ rule: 'required',
+ value: 15,
+ errorMessage: "Введите номер",
+ },
+])
+ .onSuccess((event) => {
+ const thisForm = event.target; //наша форма
+ const formData = new FormData(thisForm); //данные из нашей формы
+ const ajaxSend = (formData) => {
+  fetch(thisForm.getAttribute("action"), {
+    method: thisForm.getAttribute("method"),
+    body: formData,
+  }).then((response) => {
+    if (response.ok) {
+      thisForm.reset();
+      modalSend.classList.add("is-open");
+      
+    } else {
+      alert(response.statusText);
+      }
+   });
+  };
+  ajaxSend(formData);
+ });
+  });
 
 
 
