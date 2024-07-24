@@ -1475,9 +1475,7 @@ html {
     
 }
 @media (max-width: 576px) {
-  html {
-    /* font-size: 10px; */
-  }
+  
   .container {
     width: 90%;
   }
