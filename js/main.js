@@ -1,3 +1,37 @@
+const mMenuToggle = document.querySelector(".mobile-menu-toggle");
+const menu = document.querySelector(".mobile-menu");
+
+const openMenu = (event) => { // Функция открыванию меню
+  menu.classList.add("is-open"); // вешает класс is-open
+  mMenuToggle.classList.add("close-menu");
+  document.body.style.overflow = "hidden"; //запрещает прокрутку сайта под меню
+};
+
+const closeMenu = (event) => { // Функция закрытия меню
+  menu.classList.remove("is-open"); // убирает класс is-open
+  mMenuToggle.classList.remove("close-menu");
+  document.body.style.overflow = ""; //возвращает прокрутку сайта под меню
+};
+
+
+mMenuToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+  menu.classList.contains('is-open') ? closeMenu() : openMenu();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
   /* если вводят семерку, добавляем ей скобку */
