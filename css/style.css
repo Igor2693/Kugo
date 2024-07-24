@@ -982,6 +982,7 @@ html {
   line-height: 1.445rem;
   text-align: center;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .politics-modal {
   display: flex;
@@ -1474,7 +1475,7 @@ html {
   }
     
 }
-@media (max-width: 576px) {
+@media (max-width: 606px) {
   html {
     /* font-size: 10px; */
   }
@@ -1664,5 +1665,8 @@ html {
   }
   .main-title {
     font-size: 18px;
+  }
+  .connection-text {
+    font-size: 9px;
   }
 }

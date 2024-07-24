@@ -334,7 +334,7 @@
                   <!-- /.price-icons -->
                 </div>
                 <!-- /.product-price -->
-                <button class="product-button">Записаться на тест-драйв</button>
+                <button class="product-button" data-toggle="modal">Записаться на тест-драйв</button>
                </div>
                <!-- /.product-bot -->
             </a>
@@ -387,7 +387,7 @@
                   <!-- /.price-icons -->
                 </div>
                 <!-- /.product-price -->
-                <button class="product-button">Записаться на тест-драйв</button>
+                <button class="product-button" data-toggle="modal">Записаться на тест-драйв</button>
               </div>
               <!-- /.product-bot -->
             </a>
@@ -440,7 +440,7 @@
                   <!-- /.price-icons -->
                 </div>
                 <!-- /.product-price -->
-                <button class="product-button">Записаться на тест-драйв</button>
+                <button class="product-button" data-toggle="modal">Записаться на тест-драйв</button>
               </div>
               <!-- /.product-bot -->
             </a>
@@ -493,7 +493,7 @@
                 <!-- /.price-icons -->
               </div>
               <!-- /.product-price -->
-              <button class="product-button">Записаться на тест-драйв</button>
+              <button class="product-button" data-toggle="modal">Записаться на тест-драйв</button>
             </div>
             <!-- /.product-bot -->
               
@@ -517,12 +517,12 @@
           </picture>       
           
           <div class="container connection-wrapper">
-            <form action="#" class="connection-form">
+            <form action="handler.php" method="POST" class="connection-form">
               <h2 class="connection-title">Нет нужной модели, которую хотите протестировать?</h2>
               <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
               <div class="input-area">
                 <div class="input-form">
-                  <input id="user-phone" type="tel" class="input input-politics phone-mask" name="userphone" placeholder="">
+                  <input id="user-phone" name="userphone" type="tel" class="input input-politics phone-mask" name="userphone" placeholder="" required>
                   <label class="input-label" for="user-phone">+7 (___) __ - __ - __</label>
                 </div>
                 <!-- /.input-form-tel -->
@@ -733,7 +733,8 @@
           <img src="/img/close.svg" alt="icon: close" class="close-icon">
         </a>
         <div class="modal-left">
-          <h2 class="modal-title">Запишитесь <br> натест-драйв электросамоката</h2>
+          <form action="handler.php" method="POST">
+            <h2 class="modal-title">Запишитесь <br> натест-драйв электросамоката</h2>
           <p class="chose-model">и подберите модель для себя</p>
           <p class="modal-subtitle">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>
           <p class="question">Как с вами удобнее связаться?</p>
@@ -749,6 +750,8 @@
             </p>
           </div>
           <!-- /.politics -->
+          </form>
+          
         </div>
         <!-- /.modal-left -->
         <picture>
