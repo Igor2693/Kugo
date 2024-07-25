@@ -1485,6 +1485,12 @@ html {
   .container {
     width: 90%;
   }
+  .modal-image {
+    display: none;
+  }
+  .connection-text {
+    font-size: 11px;
+  }
   .scooter-photo-mobile {
     width: 100%;
   }

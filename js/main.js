@@ -155,7 +155,7 @@ forms.forEach((form) => {
  .addField("[name=userphone]", [
  {
  rule: 'required',
- value: 15,
+ value: 6,
  errorMessage: "Введите номер",
  },
 ])
