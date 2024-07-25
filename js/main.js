@@ -159,6 +159,16 @@ forms.forEach((form) => {
  errorMessage: "поставьте флажок"
  },
 ])
+// .addField('[name=useremail]', [
+// {
+//  rule: 'required',
+//   errorMessage: 'Введите Email',
+// },
+// {
+//   rule: 'email',
+//   errorMessage: 'Неверное значение',
+// },
+// ])
  .onSuccess((event) => {
  const thisForm = event.target; //наша форма
  const formData = new FormData(thisForm); //данные из нашей формы

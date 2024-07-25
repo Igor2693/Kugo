@@ -743,7 +743,7 @@
             <button class="modal-button">Оформить предзаказ</button>
           </div>
           <div class="politics-modal">
-            <input type="checkbox" name="checkbox" required>
+            <input type="checkbox" name="send" required>
             <p class="connection-text">
               Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и
               <a href="#" class="politics-link">политикой конфиденциальности</a>
