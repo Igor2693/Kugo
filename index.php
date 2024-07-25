@@ -517,7 +517,7 @@
           </picture>       
           
           <div class="container connection-wrapper form-wrapper">
-            <form action="handler.php" method="POST" class="connection-form">
+            <form action="handler.php" method="POST" class="form1">
               <h2 class="connection-title">Нет нужной модели, которую хотите протестировать?</h2>
               <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
               <div class="input-area">
@@ -553,8 +553,11 @@
         <div class="container">
           <div class="wrapper">
             <h3 class="subscribe-title">Оставьте свою почту и станьте первым,<br> кто получит скидку на новые самокаты<h3>
-            <input type="email" class="input-email" placeholder="Введите Ваш email">
-            <button class="button-subscribe">Подписаться</button>
+              <form action="handler.php" method="POST" class="form3">
+                <input type="email" class="input-email" name="useremail" placeholder="Введите Ваш email">
+                <button type="submit" class="button-subscribe">Подписаться</button>
+              </form>
+            
           </div>
           <!-- /.wrapper -->
         </div>
@@ -732,7 +735,7 @@
           <img src="/img/close.svg" alt="icon: close" class="close-icon">
         </a>
         <div class="modal-left form-wrapper">
-          <form action="handler.php" method="POST" class="form-modal">
+          <form action="handler.php" method="POST" class="form2">
             <h2 class="modal-title">Запишитесь <br> натест-драйв электросамоката</h2>
           <p class="chose-model">и подберите модель для себя</p>
           <p class="modal-subtitle">Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.</p>

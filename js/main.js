@@ -140,58 +140,91 @@ modalClose.addEventListener('click', (event) => {
 
 
 
-
-const forms = document.querySelectorAll("form"); //Собираем все формы
-forms.forEach((form) => {
-  const validation = new JustValidate(form, {
-    errorFieldCssClass: "is-invalid",
-  });
-  validation
- .addField("[name=userphone]", [
- {
- rule: 'required',
- errorMessage: "Введите номер",
- },
-])
- .addField("[name=send]", [
- {
- rule: 'required',
- errorMessage: "поставьте флажок"
- },
-])
-// .addField('[name=useremail]', [
-// {
-//  rule: 'required',
-//   errorMessage: 'Введите Email',
-// },
-// {
-//   rule: 'email',
-//   errorMessage: 'Неверное значение',
-// },
-// ])
- .onSuccess((event) => {
- const thisForm = event.target; //наша форма
- const formData = new FormData(thisForm); //данные из нашей формы
- const ajaxSend = (formData) => {
-  fetch(thisForm.getAttribute("action"), {
-    method: thisForm.getAttribute("method"),
-    body: formData,
+function sendFormHandler(form) {
+  const formData = new FormData(form); //данные из нашей формы
+  const ajaxSend = (formData) => {
+    fetch(form.getAttribute("action"), {
+      method: form.getAttribute("method"),
+      body: formData,
   }).then((response) => {
-    if (response.ok) {
-      thisForm.reset();
-      alert("Форма отправлена!");
-      
-      
-    } else {
-      alert(response.statusText);
+      if (response.ok) {
+        form.reset();
+        alert("Форма отправлена!");
+
+
+      } else {
+         alert(response.statusText);
       }
-   });
-  };
-  ajaxSend(formData);
- });
   });
+    };
+    ajaxSend(formData);
+}
 
 
+
+
+const form1 = document.querySelector('.form1');
+const form1Validation = new JustValidate(form1, {
+    errorFieldCssClass: "is-invalid",
+});
+form1Validation
+    .addField("[name=userphone]", [
+        {
+            rule: 'required',
+            errorMessage: "Введите номер",
+        },
+    ])
+    .addField("[name=send]", [
+        {
+            rule: 'required',
+            errorMessage: "поставьте флажок"
+        },
+    ])
+    .onSuccess((event) => {
+        sendFormHandler(event.target)
+    });
+
+
+const form2 = document.querySelector('.form2');
+const form2Validation = new JustValidate(form2, {
+    errorFieldCssClass: "is-invalid",
+});
+form2Validation
+  .addField("[name=userphone]", [
+    {
+      rule: 'required',
+      errorMessage: "Введите номер",
+    },
+])
+  .addField("[name=send]", [
+    {
+      rule: 'required',
+      errorMessage: "поставьте флажок"
+    },
+])
+  .onSuccess((event) => {
+      sendFormHandler(event.target)
+});
+
+
+const form3 = document.querySelector('.form3');
+const form3Validation = new JustValidate(form3, {
+    errorFieldCssClass: "is-invalid",
+});
+form3Validation
+  .addField('[name=useremail]', [
+  {
+    rule: 'required',
+    errorMessage: 'Введите Email',
+  },
+  {
+    rule: 'email',
+    errorMessage: 'Неверное значение',
+  },
+  ])
+  .onSuccess((event) => {
+    sendFormHandler(event.target)
+});
 
 
 
