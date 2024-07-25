@@ -530,11 +530,10 @@
                   <button type="submit" class="button connection-button">Оставить заявку на тест-драйв</button>
                 </div>
                 <!-- /.button-block -->
-                
               </div>
               <!-- /.input-area -->
               <div class="politics">
-                <input type="checkbox" checked required>
+                <input type="checkbox" name="send">
                 <p class="connection-text">
                   Нажимая на кнопку, вы соглашаетесь на обработку персональных данных и 
                   <a href="#" class="politics-link">политикой конфиденциальности</a>
@@ -765,8 +764,10 @@
       <!-- /.modal-dialog -->
      </div>
      <!-- /.modal -->
-
-     <script src="/js/main.js"></script>
+      
      <script src="/js/just-validate.production.min.js"></script>
+     <script src="/js/main.js"></script>
+
+     
 </body>
 </html>

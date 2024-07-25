@@ -146,17 +146,17 @@ forms.forEach((form) => {
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
   });
- validation
- .addField("[name=checkbox]", [
-  {
-    rule: 'required',
-  },
- ])
+  validation
  .addField("[name=userphone]", [
  {
  rule: 'required',
- value: 6,
  errorMessage: "Введите номер",
+ },
+])
+ .addField("[name=send]", [
+ {
+ rule: 'required',
+ errorMessage: "поставьте флажок"
  },
 ])
  .onSuccess((event) => {
@@ -169,6 +169,7 @@ forms.forEach((form) => {
   }).then((response) => {
     if (response.ok) {
       thisForm.reset();
+      alert("Форма отправлена!");
       
       
     } else {

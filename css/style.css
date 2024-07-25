@@ -475,6 +475,12 @@ html {
   color: #5D6C7B;
   text-decoration: line-through;
 }
+.input.is-invalid {
+  border: 1px solid red;
+}
+.just-validate-error-label {
+  z-index: 3;
+}
 .new-price {
   font-family: Jost;
   font-size: 1.125rem;
