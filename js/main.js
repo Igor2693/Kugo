@@ -99,14 +99,14 @@ document.addEventListener("input", (e) => {
 
 
 
-let input = document.querySelector('.input');
-let label = document.querySelector('.input-label[for="user-phone"]');
-input.addEventListener('focus', () => {
-  label.style.visibility = 'hidden';
-});
-input.addEventListener('blur', () => {
-  label.style.visibility = 'visible';
-});
+// let input = document.querySelector('.input');
+// let label = document.querySelector('.input-label[for="user-phone"]');
+// input.addEventListener('focus', () => {
+//   label.style.visibility = 'hidden';
+// });
+// input.addEventListener('blur', () => {
+//   label.style.visibility = 'visible';
+// });
 
 
 const modal = document.querySelector('.modal');
@@ -169,7 +169,7 @@ forms.forEach((form) => {
   }).then((response) => {
     if (response.ok) {
       thisForm.reset();
-      modalSend.classList.add("is-open");
+      
       
     } else {
       alert(response.statusText);

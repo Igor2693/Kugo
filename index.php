@@ -65,7 +65,7 @@
               <a href="#" class="header-item-link">Сотрудничество</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-item-link">Заказать звонок</a>
+              <a href="#" class="header-item-link" data-toggle="modal">Заказать звонок</a>
             </li>
           </ul>
           <div class="header-top-icons">
@@ -516,7 +516,7 @@
             <img src="/img/client.png" alt="photo client" class="client-photo">
           </picture>       
           
-          <div class="container connection-wrapper">
+          <div class="container connection-wrapper form-wrapper">
             <form action="handler.php" method="POST" class="connection-form">
               <h2 class="connection-title">Нет нужной модели, которую хотите протестировать?</h2>
               <p class="connection-subtitle">Оставьте заявку, и менеджер подберет нужный самокат</p>
@@ -642,7 +642,7 @@
             <!-- /.footer-wrapper -->
              <div class="footer-wrapper footer-wrapper-tel">
               <h2 class="footer-title-link">
-                <a href="#" class="footer-wrapper-link">Заказать звонок</a>
+                <a href="#" class="footer-wrapper-link" data-toggle="modal">Заказать звонок</a>
               </h2>
               
              </div>
@@ -732,7 +732,7 @@
         <a href="#" class="modal-close">
           <img src="/img/close.svg" alt="icon: close" class="close-icon">
         </a>
-        <div class="modal-left">
+        <div class="modal-left form-wrapper">
           <form action="handler.php" method="POST" class="form-modal">
             <h2 class="modal-title">Запишитесь <br> натест-драйв электросамоката</h2>
           <p class="chose-model">и подберите модель для себя</p>
